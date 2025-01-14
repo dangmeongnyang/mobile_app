@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- 제목 영역 (최상단에 배치) -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SnapFit"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="40dp"
+        android:textColor="#000000" />
+
+    <!-- 활동 기록 버튼 -->
+    <Button
+        android:id="@+id/btnActivityLog"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="활동 기록"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 사진 촬영 버튼 -->
+    <Button
+        android:id="@+id/btnTakePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="사진 촬영"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 히스토리 버튼 -->
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="히스토리"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 알림 설정 버튼 -->
+    <Button
+        android:id="@+id/btnNotificationSettings"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="알림 설정"
+        android:textSize="16sp" />
+</LinearLayout>

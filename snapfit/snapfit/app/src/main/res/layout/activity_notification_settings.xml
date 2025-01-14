@@ -1,0 +1,54 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- 뒤로 가기 버튼 -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_back_arrow"
+        android:contentDescription="뒤로가기"
+        android:layout_alignParentStart="true" />
+
+    <!-- 알림 ON/OFF 버튼 -->
+    <Button
+        android:id="@+id/btnEnableNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="알림 켜기" />
+
+    <Button
+        android:id="@+id/btnDisableNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnEnableNotification"
+        android:layout_marginTop="16dp"
+        android:text="알림 끄기" />
+
+    <!-- 알림 시간 설정 -->
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnDisableNotification"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSetTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/timePicker"
+        android:layout_marginTop="16dp"
+        android:text="시간 설정" />
+</RelativeLayout>
